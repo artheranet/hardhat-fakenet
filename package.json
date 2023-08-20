@@ -1,9 +1,17 @@
 {
-  "name": "@arthera/hardhat-fakenet",
+  "name": "@artherachain/hardhat-fakenet",
   "version": "0.0.1",
   "description": "Hardhat plugin for managing an Arthera fakenet node",
   "author": "Arthera Developers <dev@arthera.net>",
-  "license": "Apache2",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/artheranet/hardhat-fakenet/issues"
+  },
+  "homepage": "https://github.com/artheranet/hardhat-fakenet#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artheranet/hardhat-fakenet.git"
+  },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "keywords": [
