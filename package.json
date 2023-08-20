@@ -1,6 +1,6 @@
 {
   "name": "@artherachain/hardhat-fakenet",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Hardhat plugin for managing an Arthera fakenet node",
   "author": "Arthera Developers <dev@arthera.net>",
   "license": "Apache-2.0",

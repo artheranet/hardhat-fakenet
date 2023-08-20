@@ -1,4 +1,4 @@
-# hardhat-fakenet
+# @artherachain/hardhat-fakenet
 Hardhat plugin to run hardhat against an Arthera fakenet node
 
 ```shell
