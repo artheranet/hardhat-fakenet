@@ -1,0 +1,45 @@
+{
+  "name": "@arthera/hardhat-fakenet",
+  "version": "0.0.1",
+  "description": "Hardhat plugin for managing an Arthera fakenet node",
+  "author": "Arthera Developers <dev@arthera.net>",
+  "license": "Apache2",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "keywords": [
+    "arthera",
+    "artherachain",
+    "hardhat-plugin",
+    "testing-network"
+  ],
+  "scripts": {
+    "prettier": "prettier \"**/*.{js,md,json}\"",
+    "test": "mocha --recursive \"test/**/*.ts\" --exit",
+    "build": "tsc",
+    "clean": "rimraf lib"
+  },
+  "files": [
+    "lib/**/*",
+    "src/**/*"
+  ],
+  "dependencies": {
+    "debug": "^4.3.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.5",
+    "@types/debug": "^4.1.8",
+    "@types/fs-extra": "^8.1.2",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.17.6",
+    "chai": "^4.3.7",
+    "hardhat": "^2.12.7",
+    "mocha": "^10.2.0",
+    "prettier": "^3.0.2",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "hardhat": "^2.12.7"
+  }
+}
