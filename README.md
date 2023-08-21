@@ -10,7 +10,7 @@ Edit your `hardhat.config.js` file and add the following network:
 ```javascript
 networks: {
     arthera: {
-        url: 'http://localhost:18545', 
+        url: 'http://127.0.0.1:18545', 
         executable: '<PATH_TO_ARTHERA_NODE_BINARY>',
         accounts: [
             "0x163f5f0f9a621d72fedd85ffca3d08d131ab4e812181e0d30ffd1c885d20aac7",
