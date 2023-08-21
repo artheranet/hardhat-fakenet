@@ -2,6 +2,7 @@ import {ChildProcessWithoutNullStreams, spawn} from "child_process";
 import * as os from "os";
 import path from "path";
 import * as fs from "fs";
+import debug from "debug";
 
 export class ArtheraService {
     private _options: any;
@@ -27,6 +28,7 @@ export class ArtheraService {
         this.tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "arthera-fakenet-"));
 
         await new Promise<void>((resolve, reject) => {
+            debug.log("Starting Arthera node");
             this.node = spawn(
                 this._options.executable, [
                     '--fakenet', '1/1',
@@ -42,6 +44,7 @@ export class ArtheraService {
             this.node.stderr.on('data', (data) => {
                 const log: string = data.toString();
                 if (log.includes('HTTP server started')) {
+                    debug.log("...node started");
                     resolve();
                 }
             });
