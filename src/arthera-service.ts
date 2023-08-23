@@ -9,13 +9,6 @@ export class ArtheraService {
     private node: ChildProcessWithoutNullStreams | null = null;
     private tmpDir: string | null = null
 
-    public static getDefaultOptions(): any {
-        return {
-            executable: "arthera-node",
-            port: 18545
-        }
-    }
-
     public static async create(options: any): Promise<ArtheraService> {
         return new ArtheraService(options);
     }

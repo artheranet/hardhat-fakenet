@@ -5,13 +5,16 @@ Hardhat plugin to run hardhat against an Arthera fakenet node
 npm install --save-dev @artherachain/hardhat-fakenet
 ```
 
-Edit your `hardhat.config.js` file and add the following network:
+Edit your `hardhat.config.js` file and add the `artheraNode` config and a network for Arthera:
 
 ```javascript
+artheraNode: {
+    executable: '<PATH_TO_ARTHERA_NODE_BINARY>',
+    port: 18545,
+},
 networks: {
     arthera: {
         url: 'http://127.0.0.1:18545', 
-        executable: '<PATH_TO_ARTHERA_NODE_BINARY>',
         accounts: [
             "0x163f5f0f9a621d72fedd85ffca3d08d131ab4e812181e0d30ffd1c885d20aac7",
             "0x4203c438d4e94bf4a595794b5f5c2882f959face730abb7a7b8acb462c8e138d",
